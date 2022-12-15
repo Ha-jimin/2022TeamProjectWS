@@ -1,16 +1,53 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: 123
-  Date: 2022-12-10
-  Time: 오후 12:51
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>$Title$</title>
-  </head>
-  <body>
-  $END$
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  <style>
+    #login-img {
+      height: 250px;
+      margin: 20px;
+    }
+    #login-button {
+      margin: 5px;
+    }
+    #login-form {
+      margin: 20px;
+    }
+    .login-label {
+      padding: 0 10px 0 10px;
+    }
+    .login-input {
+      width: 150px;
+      margin: 0 5px 0 5px;
+    }
+  </style>
+</head>
+<body>
+<h4>To-do-List</h4>
+<h1>로그인하여 To-do List를 확인하세요!</h1>
+<img src="../img/jjang.jpg" id="login-img">
+<form method="post" action="loginOk" id="login-form">
+  <table>
+    <tr>
+      <td><label class="col-form-label login-label">User ID </label></td>
+      <td><input class="form-text login-input" type="text" name="userid" /></td>
+    </tr>
+    <tr>
+      <td><label class="col-form-label login-label">Password </label></td>
+      <td><input class="form-text login-input" type="password" name="password" /></td>
+    </tr>
+    <tr>
+      <td>
+        <button type="submit" id="login-button">
+           Login
+        </button>
+      </td>
+    </tr>
+  </table>
+</form>
+</body>
 </html>
