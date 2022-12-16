@@ -3,14 +3,14 @@
 <mapper namespace="Board">
     <insert id="insertBoard">
         <![CDATA[
-        INSERT INTO Board (title, content, writer)
-        VALUES (#{title}, #{content}, #{writer})
+        INSERT INTO Board (title, content, writer, category, dueDate)
+        VALUES (#{title}, #{content}, #{writer}, #{category}, #{duedate})
         ]]>
     </insert>
     <update id="updateBoard">
         <![CDATA[
         UPDATE Board
-        SET title = #{title}, writer = #{writer}, content = #{content}
+        SET title = #{title}, writer = #{writer}, content = #{content}, category = #{category}, dueDate = #{duedate}
         WHERE seq = #{seq}
         ]]>
     </update>

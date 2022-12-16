@@ -10,26 +10,12 @@ public class BoardVO {
     private String title;
     private String writer;
     private String content;
-
     private String category;
     private LocalDateTime regDate;
-
     private Timestamp date;
+    private Date dueDate;
     private int cnt;
 
-    public String getCategory(){
-        return category;
-    }
-    public Timestamp getDate(){
-        return date;
-    }
-
-    public void setDate(Timestamp date){
-        this.date = date;
-    }
-    public void setCategory(String category){
-        this.category = category;
-    }
     public int getSeq() {
         return seq;
     }
@@ -61,6 +47,14 @@ public class BoardVO {
         this.content = content;
     }
 
+    public String getCategory() {
+        return category;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
+    }
+
     public LocalDateTime getRegDate() {
         return regDate;
     }
@@ -68,5 +62,18 @@ public class BoardVO {
     public void setRegDate(LocalDateTime regDate) {
         this.regDate = regDate;
     }
+    public Timestamp getDate(){
+        return date;
+    }
+    public void setDate(Timestamp date){
+        this.date = date;
+    }
 
+    public Date getDueDate() {
+        return dueDate;
+    }
+
+    public void setDueDate(Date dueDate) {
+        this.dueDate = dueDate;
+    }
 }
